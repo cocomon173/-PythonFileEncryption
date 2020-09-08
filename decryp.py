@@ -1,8 +1,8 @@
 from cryptography.fernet import Fernet, InvalidToken
 import os
 key = b''
-input_file = input("암호화 풀을 파일명(확장자 제외): ")+'.encrypted'
-output_file = input("암호화 푼 파일명(확장자 포함): ")
+input_file = input("File You going to decrypt(Without File extension): ")+'.encrypted'
+output_file = input("Out Put file name(With File extension): ")
 
 with open("key.key",'rb') as f:
     key = f.read()
@@ -20,4 +20,3 @@ try:
         os.remove(input_file)
 except InvalidToken as e:
     print("Invalid Key - Unsuccessfully decrypted")
-
