@@ -8,4 +8,4 @@ pip install cryptography
 </code>
 </pre>
   
-## and JUST DO IT
+## And JUST ACTIVATE CODE!
